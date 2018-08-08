@@ -2,8 +2,8 @@
 //  CustomerSigningUITests.swift
 //  CustomerSigningUITests
 //
-//  Created by 张体宾 on 2017/9/25.
-//  Copyright © 2017年 Xueshan Financial Information Service Co., Ltd. All rights reserved.
+//  Created by 张体宾 on 2018/4/18.
+//  Copyright © 2018年 Dreams of Ideal World Co., Ltd. All rights reserved.
 //
 
 import XCTest

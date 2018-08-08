@@ -2,25 +2,26 @@
 //  AppDelegate.swift
 //  CustomerSigning
 //
-//  Created by 张体宾 on 2017/9/25.
-//  Copyright © 2017年 Xueshan Financial Information Service Co., Ltd. All rights reserved.
+//  Created by 张体宾 on 2018/4/18.
+//  Copyright © 2018年 Dreams of Ideal World Co., Ltd. All rights reserved.
 //
 
 import UIKit
 
-import CoreData
-
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
         return true
     }
-
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -42,23 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-    
-    lazy var applicationDocumentsDirectory: URL = {
-        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return urls[urls.count - 1]
-    }()
-    
-    lazy var managedObjectModel: NSManagedObjectModel = {
-        let modelURL = Bundle.main.url(forResource: "stopWatch", withExtension: "momd")
-        return NSManagedObjectModel(contentsOf: modelURL)
-    }()
-    
-    func saveContext () {
-        
-    }
-    
-    lazy var persistentStoreCoordinator = NSPersistentStoreCoordinator
 
 
 }
